@@ -1,0 +1,50 @@
+\documentclass[twocolumn]{article}
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[a4paper,
+inner=2cm,
+outer=2cm,
+top=3cm,
+bottom=3cm,
+]{geometry}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{lipsum}
+
+%/pmm creat middle point for inclusive writing, better suited than \textperiodcentered
+
+\newcommand{\pmm}{\kern-.25em\textperiodcentered\kern-.25em}
+
+%commande créant \og et \fg, permettant d'ouvrir et de fermer des guillemets français
+\newcommand{\og}[0]{\guillemetleft}
+\newcommand{\fg}[0]{\guillemetright~}
+
+\title{\color{red!70!black}\Huge This is a Title}
+\author{\color{red!70!black}Your Name\\Your Institution}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    \lipsum[1-2]
+\end{abstract}
+
+\section{Introduction}
+    \lipsum[1-8]
+
+\section{Methodology}
+    \lipsum[1-8]
+
+\end{document}
